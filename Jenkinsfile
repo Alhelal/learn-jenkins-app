@@ -37,7 +37,7 @@ pipeline {
                 }
             }
             environment {
-                AWS_S3_BUCKET = 'your-aws-s3-bucket-name'
+                AWS_S3_BUCKET = 'sys-cs-backup'
             }
             steps {
                 withCredentials([usernamePassword(credentialsId: 'aws', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: 'AWS_ACCESS_KEY_ID')]) {
